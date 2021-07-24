@@ -1,3 +1,7 @@
+### This is a fork that re-enables the ability to force AVC over AVC High, and will be kept up-to-date.
+
+-------------------------------------------------------------------------------------------------------  
+
 thanks to https://github.com/truedread/netflix-1080p
 
 
