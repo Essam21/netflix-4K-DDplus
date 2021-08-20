@@ -35,14 +35,14 @@ function save_options() {
 
 function restore_options() {
     chrome.storage.sync.get({
-        useallSub: true,
-		useddplus: true,
-		useAVC: true,
+        useallSub: false,
+		useddplus: false,
+		useAVC: false,
 		useDV: false,
 		useFHD: false,
 		useHA: false,
 		useAVCH: false,
-        setMaxBitrate: true
+        setMaxBitrate: false
     }, function(items) {
         document.getElementById('allSub').checked = items.useallSub;
 		document.getElementById('ddplus').checked = items.useddplus;
