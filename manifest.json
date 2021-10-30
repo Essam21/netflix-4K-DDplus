@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Netflix_Extension",
 	"description": "Watch Netflix more comfortably on your computer.",
-	"version": "1.51.4",
+	"version": "1.51.5",
 	"author": "org by truedread ，modify by https://github.com/lkmvip/netflix-4K-DDplus and https://github.com/Sparoney/netflix-4K-DDplus",
 	"browser_action": {
 		"default_title": "Netflix Options",
@@ -36,7 +36,7 @@
 	"web_accessible_resources": [
 		//"msl_client.js",
 		"netflix_max_bitrate.js",
-		"cadmium-playercore-6.0031.809.911.js"
+		"cadmium-playercore-6.0032.282.911.js"
 	],
 	"permissions": [
 		"storage",

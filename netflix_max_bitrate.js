@@ -41,8 +41,29 @@ let fn = function () {
 	return true;
 };
 
+	//The test version is not guaranteed to be valid
+	//Instructions
+	//Play any movie, move the mouse to the audio and subtitles tab and enjoy.
+	//If not, refresh the page and repeat the steps
+	//It may be improved in the future, or it may be given up, depending on Netflix
+let test = function(){
+	var timesRun = 0;
+	var interval = setInterval(function(){
+	timesRun += 1;
+	if(timesRun === 20){
+		clearInterval(interval);
+	}
+			var ov = document.styleSheets[2];
+			ov.insertRule(".ltr-m6m86k {overflow-y: auto;}", ov.rules.length);
+			var ov2 = document.styleSheets[8];
+			ov2.insertRule(".ltr-m6m86k {overflow-y: auto;}", ov2.rules.length);
+	}, 500);
+}
+
+
 let run = function () {
-	fn() || setTimeout(run, 100)
+	//fn() || setTimeout(run, 100)
+	fn() ? setTimeout(test, 100) : setTimeout(run, 100)
 };
 
 const WATCH_REGEXP = /netflix.com\/watch\/.*/;
